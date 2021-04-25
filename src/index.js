@@ -2,10 +2,13 @@
 
 function fetchImgs(){
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
-  let obj;
-  fetch(imgUrl).then(response => response.json()).then(json => console.log(json));
-  // console.log(obj);
-  // return obj;
+  let imgDiv = document.getElementById("dog-image-container");
+  fetch(imgUrl).then(response => response.json()).then(json => {
+    console.log(json);
+    for(let i=0;i<json.messages.length;i++) {
+      imgDiv.insertAdjacentHTML('beforeend',`<img src = ${json.messages[i]}>`);
+    }
+  });
 }
 
 fetchImgs();

@@ -33,6 +33,7 @@ function filterBreeds() {
   const index = document.getElementById("breed-dropdown").selectedIndex;
   const letter = document.getElementById("breed-dropdown").options[index];
   const li = document.querySelectorAll("li");
+  console.log(li);
   for(let i=0;i<li.length;i++) {
     if(li[i].innerHTML[0] !== letter) {
       li[i].remove();
@@ -42,4 +43,7 @@ function filterBreeds() {
 
 fetchImgs();
 fetchBreeds();
+// document.getElementById("breed-dropdown").addEventListener("click",() => {
+//   filterBreeds();
+// });
 filterBreeds();

@@ -31,7 +31,7 @@ function fetchBreeds() {
 
 function filterBreeds() {
   const index = document.getElementById("breed-dropdown").selectedIndex;
-  const letter = document.getElementById("breed-dropdown").options[index];
+  const letter = document.getElementById("breed-dropdown").options[index].innerHTML;
   console.log(letter);
   const li = document.querySelectorAll("li");
   for(let i=0;i<li.length;i++) {

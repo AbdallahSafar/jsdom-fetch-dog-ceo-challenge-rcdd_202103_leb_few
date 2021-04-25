@@ -8,9 +8,4 @@ function fetchImgs(){
   // return obj;
 }
 
-// function renderImgs(obj)
-// {
-//
-// }
-
 fetchImgs();

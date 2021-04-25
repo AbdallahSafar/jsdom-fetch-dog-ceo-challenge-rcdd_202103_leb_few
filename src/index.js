@@ -18,8 +18,8 @@ function fetchBreeds() {
     console.log(json);
     for(const key in json.message) {
       if(json.message[key].length !== 0) {
-        for(const elt in json.message[key]) {
-          breedUl.insertAdjacentHTML('beforeend',`<li>${elt}</li>`);
+        for(let i=0;i<json.message[key].length;i++) {
+          breedUl.insertAdjacentHTML('beforeend',`<li>${json.message[key][i]}</li>`);
         }
       }
     }

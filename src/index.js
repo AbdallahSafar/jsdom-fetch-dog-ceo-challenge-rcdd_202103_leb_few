@@ -18,7 +18,9 @@ function fetchBreeds() {
     console.log(json);
     for(const key in json.message) {
       if(json.message[key].length !== 0) {
-          breedUl.insertAdjacentHTML('beforeend',`<li src = ${json.message[i]} width='300px' height='200px' style='margin-right: 10px'>`);
+        for(const elt in json.message[key]) {
+          breedUl.insertAdjacentHTML('beforeend',`<li>${elt}</li>`);
+        }
       }
     }
   });

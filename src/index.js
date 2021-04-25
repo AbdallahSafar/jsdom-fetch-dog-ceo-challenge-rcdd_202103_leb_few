@@ -37,3 +37,4 @@ function liClick() {
 
 fetchImgs();
 fetchBreeds();
+liClick();

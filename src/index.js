@@ -29,6 +29,12 @@ function fetchBreeds() {
   });
 }
 
+function filterBreeds() {
+  const index = document.getElementById("breed-dropdown").selectedIndex;
+  const letter = document.getElementById("breed-dropdown").options[index];
+  const li = document.querySelectorAll("li");
+}
+
 fetchImgs();
 fetchBreeds();
 // liClick();

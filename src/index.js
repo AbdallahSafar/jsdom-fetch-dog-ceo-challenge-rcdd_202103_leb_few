@@ -36,7 +36,7 @@ function filterBreeds() {
   const li = document.querySelectorAll("li");
   for(let i=0;i<li.length;i++) {
     if(li[i].innerHTML[0] !== letter) {
-      li[i].remove();
+      li[i].style.display = "none";
     }
   }
 }

@@ -6,7 +6,7 @@ function fetchImgs(){
   fetch(imgUrl).then(response => response.json()).then(json => {
     console.log(json);
     for(let i=0;i<json['message'].length;i++) {
-      imgDiv.innerHTML += `<img src = ${json.message[i]}>`;
+      imgDiv.innerHTML += `<img src = ${json.message[i]}>`` ;
     }
   });
 }

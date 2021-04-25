@@ -33,6 +33,11 @@ function filterBreeds() {
   const index = document.getElementById("breed-dropdown").selectedIndex;
   const letter = document.getElementById("breed-dropdown").options[index];
   const li = document.querySelectorAll("li");
+  for(let i=0;i<li.length;i++) {
+    if(li[i].innerHTML[0] !== letter) {
+      li[i].remove();
+    }
+  }
 }
 
 fetchImgs();

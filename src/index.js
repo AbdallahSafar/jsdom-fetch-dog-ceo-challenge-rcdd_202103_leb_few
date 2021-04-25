@@ -6,7 +6,7 @@ function fetchImgs(){
   fetch(imgUrl).then(response => response.json()).then(json => {
     console.log(json);
     for(let i=0;i<json.message.length;i++) {
-      imgDiv.insertAdjacentHTML('beforeend',`<img src = ${json.message[i]} width='200px' height='200px' style='margin-right: 5px'>`);
+      imgDiv.insertAdjacentHTML('beforeend',`<img src = ${json.message[i]} width='400px' height='200px' style='margin-right: 10px'>`);
     }
   });
 }

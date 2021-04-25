@@ -29,15 +29,15 @@ function fetchBreeds() {
   });
 }
 
-function liClick() {
-  const li = document.querySelectorAll("li");
-  for(let i=0;i<li.length;i++) {
-    li[i].addEventListener("click", (e) => {
-      e.target.style.color = "red";
-    });
-  }
-}
+// function liClick() {
+//   const li = document.querySelectorAll("li");
+//   for(let i=0;i<li.length;i++) {
+//     li[i].addEventListener("click", (e) => {
+//       e.target.style.color = "red";
+//     });
+//   }
+// }
 
 fetchImgs();
 fetchBreeds();
-liClick();
+// liClick();

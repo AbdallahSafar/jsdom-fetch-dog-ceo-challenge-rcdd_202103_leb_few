@@ -42,6 +42,6 @@ function filterBreeds() {
 
 fetchImgs();
 fetchBreeds();
-document.getElementById("breed-dropdown").addEventListener("click",() => {
+document.getElementById("breed-dropdown").addEventListener("change",() => {
   filterBreeds();
 });

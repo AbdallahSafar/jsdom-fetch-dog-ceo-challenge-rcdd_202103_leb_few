@@ -5,8 +5,8 @@ function fetchImgs(){
   let imgDiv = document.getElementById("dog-image-container");
   fetch(imgUrl).then(response => response.json()).then(json => {
     console.log(json);
-    for(let i=0;i<json['messages'].length;i++) {
-      imgDiv.insertAdjacentHTML('beforeend',`<img src = ${json.messages[i]}>`);
+    for(let i=0;i<json['message'].length;i++) {
+      imgDiv.insertAdjacentHTML('beforeend',`<img src = ${json.message[i]}>`);
     }
   });
 }

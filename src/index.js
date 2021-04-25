@@ -42,7 +42,6 @@ function filterBreeds() {
 
 fetchImgs();
 fetchBreeds();
-// document.getElementById("breed-dropdown").addEventListener("click",() => {
-//   filterBreeds();
-// });
-filterBreeds();
+document.getElementById("breed-dropdown").addEventListener("click",() => {
+  filterBreeds();
+});

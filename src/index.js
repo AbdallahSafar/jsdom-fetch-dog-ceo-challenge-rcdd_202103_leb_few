@@ -1,6 +1,6 @@
 //console.log('%c HI', 'color: firebrick')
 
-function fetchImgs(){
+function fetchImgs() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
   let imgDiv = document.getElementById("dog-image-container");
   fetch(imgUrl).then(response => response.json()).then(json => {
@@ -9,6 +9,10 @@ function fetchImgs(){
       imgDiv.insertAdjacentHTML('beforeend',`<img src = ${json.message[i]} width='300px' height='200px' style='margin-right: 10px'>`);
     }
   });
+}
+
+function fetchBreeds() {
+  
 }
 
 fetchImgs();

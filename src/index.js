@@ -20,6 +20,9 @@ function fetchBreeds() {
       if(json.message[key].length !== 0) {
         for(let i=0;i<json.message[key].length;i++) {
           breedUl.insertAdjacentHTML('beforeend',`<li>${json.message[key][i]}</li>`);
+          const li = document.querySelectorAll("li");
+          li[li.length - 1].addEventListener("click", (e) => {
+            e.target.style.color = "red"; });
         }
       }
     }

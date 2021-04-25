@@ -9,5 +9,5 @@ function fetchImgs(){
 
 function renderImgs(obj)
 {
-  
+
 }

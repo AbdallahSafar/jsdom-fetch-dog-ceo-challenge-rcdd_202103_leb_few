@@ -12,7 +12,7 @@ function fetchImgs() {
 }
 
 function fetchBreeds() {
-  
+
 }
 
 fetchImgs();

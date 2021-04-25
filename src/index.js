@@ -12,4 +12,4 @@ function fetchImgs(){
 }
 
 fetchImgs();
-document.getElementById('dog-image-container').innerHTML = "Hello";
+console.log(document.getElementById('dog-image-container'));

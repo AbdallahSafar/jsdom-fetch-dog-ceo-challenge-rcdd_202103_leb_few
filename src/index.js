@@ -1,4 +1,4 @@
-console.log('%c HI', 'color: firebrick')
+//console.log('%c HI', 'color: firebrick')
 
 function fetchImgs(){
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4";

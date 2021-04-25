@@ -35,7 +35,7 @@ function filterBreeds() {
   console.log(letter);
   const li = document.querySelectorAll("li");
   for(let i=0;i<li.length;i++) {
-    li[i].style.display = "block";
+    li[i].style.display = "inline-block";
     if(li[i].innerHTML[0] !== letter) {
       li[i].style.display = "none";
     }

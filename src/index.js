@@ -12,3 +12,5 @@ function renderImgs(obj)
 {
 
 }
+
+fetchImgs();

@@ -12,4 +12,3 @@ function fetchImgs(){
 }
 
 fetchImgs();
-console.log(document.getElementById('dog-image-container'));

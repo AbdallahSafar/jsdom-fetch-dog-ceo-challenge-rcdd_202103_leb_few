@@ -42,4 +42,4 @@ function filterBreeds() {
 
 fetchImgs();
 fetchBreeds();
-// liClick();
+filterBreeds();

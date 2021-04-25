@@ -16,9 +16,11 @@ function fetchBreeds() {
   const breedUl = document.getElementById("dog-breeds");
   fetch(breedUrl).then(response => response.json()).then(json => {
     console.log(json);
-    // for(let i=0;i<json.message.length;i++) {
-    //   imgDiv.insertAdjacentHTML('beforeend',`<img src = ${json.message[i]} width='300px' height='200px' style='margin-right: 10px'>`);
-    //}
+    for(const key in json.message) {
+      if(json.message[key].length !== 0) {
+          breedUl.insertAdjacentHTML('beforeend',`<li src = ${json.message[i]} width='300px' height='200px' style='margin-right: 10px'>`);
+      }
+    }
   });
 }
 

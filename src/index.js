@@ -10,7 +10,7 @@ function fetchImgs(){
 
 // function renderImgs(obj)
 // {
-// 
+//
 // }
 
 fetchImgs();
